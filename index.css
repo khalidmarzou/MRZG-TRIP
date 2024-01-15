@@ -23,11 +23,9 @@ header {
   height: 60px;
   border-radius: 20px;
   display: flex;
-  color: white;
   justify-content: space-evenly;
   align-items: center;
-  background: rgba(255, 255, 255, 0.223);
-  -webkit-backdrop-filter: blur(50px);
+  background-color: rgba(255, 255, 255, 0.642);
   backdrop-filter: blur(50px);
 }
 header .menu img {
@@ -45,6 +43,27 @@ header .menu div .icon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+header .menu div .icon a{
+  color: black;
+  text-decoration: none;
+}
+header .menu div .icon:nth-child(1){
+  border-right: 1px solid;
+  padding-right: 7px;
+}
+header .menu div .icon:nth-child(2){
+  border-right: 1px solid;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+header .menu div .icon:nth-child(3){
+  border-right: 1px solid;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+header .menu div .icon:nth-child(4){
+  padding-left: 7px;
 }
 header .menu div .icon img {
   height: 30px;
@@ -71,9 +90,9 @@ aside video {
   z-index: 1;
   width: 100%;
   top: 30px;
-  font-size: 40px;
+  font-size: 50px;
   text-shadow: 3px 3px 3px black;
-  line-height: 70px;
+  line-height: 77px;
 }
 .betweenheaderaside h2 {
   color: black;
@@ -82,13 +101,13 @@ aside video {
 .betweenheaderaside h1 {
   margin-bottom: 0px;
 }
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
 }
-main h4{
+main h4 {
   font-size: 25px;
   color: whitesmoke;
   margin-left: 10px;
@@ -97,7 +116,7 @@ main h4{
   padding-bottom: 15px;
   line-height: 22px;
 }
-main img{
+main img {
   width: 95%;
   border: 2px solid whitesmoke;
   border-radius: 20px;
