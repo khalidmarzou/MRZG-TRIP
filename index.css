@@ -16,7 +16,6 @@ header {
   top: 0;
   z-index: 2;
   display: flex;
-  justify-content: center;
 }
 .menu {
   width: 100%;
@@ -139,7 +138,6 @@ footer {
 footer .partners {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 footer .partners img {
   width: 95%;
@@ -158,9 +156,10 @@ footer .partners img:nth-of-type(4):hover {
   background-color: rgb(255, 255, 255);
 }
 footer .partners h1 {
+  width: 220px;
   color: whitesmoke;
-  width: 95%;
   border-bottom: solid;
+  margin-left: 30px;
 }
 footer .partners div {
   width: 95%;
@@ -197,12 +196,14 @@ input {
   background-color: #3c3d3b00;
   border: none;
   border-bottom: 1px solid;
+  padding-left: 10px;
 }
 textarea {
   height: 60px;
   background-color: #3c3d3b00;
   border: 1px solid black;
   border-radius: 5px;
+  padding-left: 10px;
 }
 footer .contact fieldset div img {
   height: 35px;
@@ -219,8 +220,56 @@ footer .contact fieldset div {
   width: 100%;
   justify-content: center;
 }
-.copyright img {
-}
 .copyright p {
   color: #262725;
+}
+@media (min-width: 650px) {
+  .menu {
+    width: 400px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  main div .galery {
+    width: 200px;
+  }
+}
+@media (min-width: 854px) {
+  main div .galery {
+    width: 260px;
+  }
+}
+@media (min-width: 1094px) {
+  main div .galery {
+    width: 340px;
+  }
+  .betweenheaderaside {
+    width: 60%;
+    font-size: 60px;
+  }
+  main {
+    align-items: start;
+  }
+  main h4 {
+    width: 60%;
+    margin-left: 30px;
+  }
+  .partners {
+    width: 30%;
+  }
+  .contact {
+    width: 40%;
+  }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .partners img {
+    height: 110px;
+  }
+  header {
+    justify-content: end;
+    padding-right: 30px;
+  }
 }
