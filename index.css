@@ -68,7 +68,7 @@ aside video {
   z-index: 1;
   width: 100%;
   top: 100px;
-  font-size: 50px;
+  font-size: 40px;
   text-shadow: 3px 3px 3px black;
   line-height: 77px;
 }
@@ -259,6 +259,9 @@ footer .contact fieldset div {
   color: #262725;
 }
 @media (min-width: 650px) {
+  .betweenheaderaside {
+    font-size: 50px;
+  }
   .menu {
     width: 400px;
     border-radius: 15px;
