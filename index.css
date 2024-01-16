@@ -32,12 +32,12 @@ header .menu img {
   border-radius: 10px;
   margin-left: 20px;
 }
-header .menu img:hover{
+header .menu img:hover {
   background-color: #9d9e9c;
 }
-header .menu div{
+header .menu div {
   height: 90%;
-  width: 250px;
+  width: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -170,9 +170,57 @@ footer .partners div {
 footer .partners div img {
   width: 50%;
 }
-footer .contact{
-  margin-top: 20px;
-  clip-path: polygon(100% 0%, 100%  70%, 50% 80%, 0% 70%, 0% 0%, 50% 5%);
-  background-color: rgb(101, 95, 95);
-  height: 500px;
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .contact fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  width: 87%;
+}
+legend {
+  color: whitesmoke;
+  font-size: 20px;
+}
+footer .contact fieldset form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-bottom: 10px;
+}
+input {
+  height: 25px;
+  background-color: #3c3d3b00;
+  border: none;
+  border-bottom: 1px solid;
+}
+textarea {
+  height: 60px;
+  background-color: #3c3d3b00;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+footer .contact fieldset div img {
+  height: 35px;
+}
+footer .contact fieldset div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 40px;
+}
+.copyright {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.copyright img {
+}
+.copyright p {
+  color: #262725;
 }
