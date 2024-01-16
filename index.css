@@ -271,14 +271,18 @@ footer .contact fieldset div {
   main div .galery {
     width: 260px;
   }
-}
-@media (min-width: 1094px) {
-  main div .galery {
-    width: 340px;
+  header {
+    justify-content: end;
+    padding-right: 30px;
   }
   .betweenheaderaside {
     width: 60%;
     font-size: 60px;
+  }
+}
+@media (min-width: 1094px) {
+  main div .galery {
+    width: 340px;
   }
   main {
     align-items: start;
@@ -300,9 +304,5 @@ footer .contact fieldset div {
   }
   .partners img {
     height: 110px;
-  }
-  header {
-    justify-content: end;
-    padding-right: 30px;
   }
 }
