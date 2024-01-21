@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .options-list{
+            display: flex;
+            gap: 20px;
+        }
+        .options {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list-item {
+            cursor: pointer;
+            margin-bottom: 10px;
+            background-color: yellowgreen;
+        }
+
+        .list-item:hover .options {
+            display: block;
+        }
+    </style>
+    <title>Hover Show Options</title>
+</head>
+<body>
+
+<ul class="options-list" type="none">
+    <li class="list-item">Item 1
+        <ul class="options">
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+        </ul>
+    </li>
+    <li class="list-item">Item 2
+        <ul class="options">
+            <li>Option 1</li>
+            <li>Option 2</li>
+        </ul>
+    </li>
+    <li class="list-item">Item 3
+        <ul class="options">
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+@keyframes logoAnimation {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+@keyframes animationImgsInBack{
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+@keyframes animationImgsInBack1{
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+@keyframes titleAnimation{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 10px;
+}
+header img {
+  height: 40px;
+  margin-left: 15px;
+}
+header img:hover {
+  animation-name: logoAnimation;
+  animation-duration: 0.4s;
+}
+header .rs {
+  margin-right: 15px;
+  display: flex;
+  gap: 10px;
+}
+header .menu {
+  display: flex;
+  gap: 10px;
+}
+header a {
+  text-decoration: none;
+  color: rgb(163, 163, 155);
+  transition-property: all;
+  transition-duration: 1s;
+}
+header a:hover {
+  color: white;
+  text-decoration: overline underline 2px;
+}
+aside .title {
+  animation-name: titleAnimation;
+  animation-duration: 2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 23vw;
+  font-family: serif;
+  font-weight: bold;
+  line-height: 19vw;
+  width: 100%;
+}
+aside .title span:nth-child(2) {
+  text-align: end;
+}
+aside .backimages {
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  width: 99%;
+  margin-top: 20px;
+}
+aside .backimages div{
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+    width: 70%;
+}
+aside .backimages div:nth-child(1){
+  margin-left: 50px;
+  animation-name: animationImgsInBack;
+  animation-duration: 2s;
+}
+aside .backimages div:nth-child(2){
+  margin-left: auto;
+  margin-right: 50px;
+  animation-name: animationImgsInBack1;
+  animation-duration: 2s;
+}
+aside .backimages div img {
+  height: 200px;
+  box-shadow: 10px 10px 0px 0px rgb(138, 134, 134);
+  opacity: 0.3;
+  filter: grayscale(70%);
+}
+aside .def{
+  animation-name: titleAnimation;
+  animation-duration: 2s;
+  color: whitesmoke;
+  font-size: 5vw;
+  text-align: justify;
+  width: 50%;
+}
+aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width:1024px){
+  aside{
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+  }
+  aside .title{
+    width: 60%;
+    font-size: 15vw;
+    line-height: 150px;
+  }
+  aside .def{
+    width: 40%;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+  }
+}
