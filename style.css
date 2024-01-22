@@ -103,7 +103,7 @@ aside .title {
   font-weight: bold;
   line-height: 19vh;
   width: 90%;
-  margin-top: 120px;
+  margin-bottom: 25vh;
 }
 aside .title span:nth-child(2) {
   text-align: end;
@@ -116,7 +116,6 @@ aside .backimages {
   gap: 30px;
   justify-content: center;
   width: 99%;
-  margin-top: 100px;
 }
 aside .backimages div{
     display: flex;
@@ -147,7 +146,6 @@ aside .def{
   font-size: 5vw;
   text-align: center;
   width: 60%;
-  margin-top: 30px;
 }
 aside .def:hover{
   color: rgb(163, 163, 155);
