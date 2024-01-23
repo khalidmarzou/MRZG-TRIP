@@ -101,9 +101,8 @@ aside .title {
   font-size: 20vw;
   font-family: serif;
   font-weight: bold;
-  line-height: 19vh;
+  line-height: 15vw;
   width: 90%;
-  margin-bottom: 25vh;
 }
 aside .title span:nth-child(2) {
   text-align: end;
@@ -154,6 +153,8 @@ aside{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 main{
   border-top: 2px solid rgb(56, 56, 56);
@@ -182,12 +183,11 @@ main .whymorocco h1{
   aside{
     flex-direction: row;
     align-items: center;
-    margin-top: 100px;
   }
   aside .title{
     width: 60%;
     font-size: 15vw;
-    line-height: 23vh;
+    line-height: 11vw;
   }
   aside .def{
     width: 40%;
