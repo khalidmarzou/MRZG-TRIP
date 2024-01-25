@@ -9,41 +9,49 @@
     transform: rotate(3deg);
   }
 }
-@keyframes animationImgsInBack{
-  0%{
+@keyframes animationImgsInBack {
+  0% {
     transform: translateX(100px);
     opacity: 0;
   }
-  50%{
+  50% {
     transform: translateX(50px);
     opacity: 0;
   }
-  100%{
+  100% {
     transform: translateX(0px);
   }
 }
-@keyframes animationImgsInBack1{
-  0%{
+@keyframes animationImgsInBack1 {
+  0% {
     transform: translateX(-100px);
     opacity: 0;
   }
-  50%{
+  50% {
     transform: translateX(-50px);
     opacity: 0;
   }
-  100%{
+  100% {
     transform: translateX(0px);
   }
 }
-@keyframes titleAnimation{
-  0%{
+@keyframes titleAnimation {
+  0% {
     opacity: 0;
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
-  100%{
+  100% {
     opacity: 1;
+  }
+}
+@keyframes borderh1 {
+  0% {
+    border: none;
+  }
+  100% {
+    border-left: 7px solid rgb(56, 56, 56);
   }
 }
 body {
@@ -54,11 +62,16 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+header .menu1 {
+  display: none;
+}
 header {
+  height: 7vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
+  z-index: 2;
   top: 0;
   padding-top: 10px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -98,11 +111,25 @@ aside .title {
   flex-direction: column;
   justify-content: center;
   color: whitesmoke;
-  font-size: 20vw;
+  font-size: 15vw;
   font-family: serif;
   font-weight: bold;
-  line-height: 15vw;
-  width: 90%;
+  line-height: 11vw;
+  width: 60%;
+}
+aside .def {
+  animation-name: titleAnimation;
+  animation-duration: 2s;
+  color: whitesmoke;
+  font-size: 5vw;
+  text-align: center;
+  width: 38%;
+  line-height: 5vw;
+}
+aside .def:hover {
+  color: rgb(163, 163, 155);
+}
+aside .title span {
 }
 aside .title span:nth-child(2) {
   text-align: end;
@@ -114,63 +141,44 @@ aside .backimages {
   flex-direction: column;
   gap: 30px;
   justify-content: center;
-  width: 99%;
+  width: 100%;
 }
-aside .backimages div{
-    display: flex;
-    justify-content: space-between;
-    gap: 10%;
-    width: 70%;
+aside .backimages div {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
 }
-aside .backimages div:nth-child(1){
+aside .backimages div:nth-child(1) {
   animation-name: animationImgsInBack;
   animation-duration: 2s;
 }
-aside .backimages div:nth-child(2){
+aside .backimages div:nth-child(2) {
   margin-left: auto;
   margin-right: 9%;
   animation-name: animationImgsInBack1;
   animation-duration: 2s;
 }
 aside .backimages div img {
-  height: 150px;
+  height: 17vw;
   box-shadow: 10px 10px 0px 0px rgb(138, 134, 134);
   opacity: 0.3;
   filter: grayscale(70%);
 }
-aside .def{
-  animation-name: titleAnimation;
-  animation-duration: 2s;
-  color: whitesmoke;
-  font-size: 5vw;
-  text-align: center;
-  width: 60%;
-}
-aside .def:hover{
-  color: rgb(163, 163, 155);
-}
-aside{
+aside {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 90vh;
 }
-main{
+main {
   border-top: 2px solid rgb(56, 56, 56);
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
-@keyframes borderh1{
-  0%{
-    border: none;
-  }
-  100%{
-    border-left: 7px solid rgb(56, 56, 56);
-  }
-}
-main .whymorocco h1{
+main h1 {
   color: whitesmoke;
   font-size: 10vw;
   animation-name: borderh1;
@@ -178,21 +186,125 @@ main .whymorocco h1{
   animation-iteration-count: infinite;
   padding: 10px;
 }
+main .whymorocco {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  row-gap: 15px;
+  justify-content: center;
+}
+main .whymorocco div {
+  border: 0.5px solid whitesmoke;
+  width: 30%;
+  background-color: rgb(27, 26, 26);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .whymorocco div img {
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px;
+}
+main .whymorocco div h3 {
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(15px);
+  text-shadow: 2px 1px 2px;
+  position: relative;
+  bottom: 60px;
+  box-shadow: 2px 2px 2px;
+  padding: 5px;
+}
+main .whymorocco div p {
+  color: whitesmoke;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+}
 
-@media (min-width:1024px){
-  aside{
+@media (max-width: 600px) {
+  @keyframes animationImgsInBack {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes animationImgsInBack1 {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  header .menu {
+    display: none;
+  }
+  header .rs {
+    display: none;
+  }
+  header .menu1 {
+    display: block;
+    margin-right: 15px;
+  }
+  aside {
+    flex-direction: column;
+  }
+  aside .title {
+    width: 90%;
+    height: 30%;
+    font-size: 80px;
+    line-height: 65px;
+  }
+  aside .def {
+    height: 20%;
+    width: 70%;
+    font-size: 23px;
+    line-height: 25px;
+  }
+  aside .backimages {
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    width: auto;
   }
-  aside .title{
-    width: 60%;
-    font-size: 15vw;
-    line-height: 11vw;
+  aside .backimages div {
+    flex-direction: column;
+    width: auto;
   }
-  aside .def{
-    width: 40%;
-    padding: 20px;
-    font-size: 50px;
-    text-align: center;
+  aside .backimages div:nth-child(1) {
+    justify-content: start;
+    gap: 20px;
+  }
+  aside .backimages div:nth-child(2) {
+    justify-content: end;
+    gap: 20px;
+  }
+  aside .backimages div img {
+    height: 25%;
+    width: auto;
+  }
+  main .whymorocco div {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 601px) {
+  main .whymorocco div {
+    width: 45%;
   }
 }
