@@ -60,7 +60,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 header .menu1 {
   display: none;
@@ -231,10 +230,10 @@ footer {
 }
 footer .contactUs {
   background-color: rgb(148, 185, 196);
-  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 550px;
 }
 footer .contactUs input {
   width: 90%;
@@ -247,6 +246,25 @@ footer .contactUs input {
   background: transparent;
   cursor: pointer;
 }
+footer .contactUs textarea {
+  width: 90%;
+  height: 60px;
+  font-size: 25px;
+  font-weight: 900;
+  border: none;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  padding-left: 15px;
+  background: transparent;
+  cursor: pointer;
+  margin-top: 10px;
+}
+footer .contactUs textarea::placeholder {
+  color: black;
+}
+footer .contactUs textarea:hover::placeholder {
+  color: rgb(34, 34, 34);
+}
 footer .contactUs input::placeholder {
   color: black;
 }
@@ -254,6 +272,10 @@ footer .contactUs input:hover::placeholder {
   color: rgb(34, 34, 34);
 }
 footer .contactUs input:focus {
+  outline: none;
+  text-transform: uppercase;
+}
+footer .contactUs textarea:focus {
   outline: none;
 }
 footer .contactUs .qs div:nth-child(1) {
@@ -269,14 +291,34 @@ footer .contactUs .qs div:nth-child(2) {
   width: 99%;
 }
 footer .contactUs .qs div:nth-child(2) span:nth-child(1) {
-  color: rgb(211, 154, 154);
+  color: rgb(143, 76, 76);
 }
 footer .contactUs .qs div:nth-child(2) span:nth-child(2) {
-  color: rgb(152, 221, 152);
+  color: rgb(59, 158, 59);
 }
 footer .contactUs .qs div:nth-child(2) span:nth-child(3) {
-  color: hsl(240, 76%, 75%);
+  color: rgb(58, 58, 156);
 }
+footer .contactUs .buttons div {
+  background-color: black;
+  color: rgb(148, 185, 196);
+  font-size: 30px;
+  font-weight: 900;
+  padding-left: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+footer .contactUs .buttons div:hover {
+  color: whitesmoke;
+  font-size: 31px;
+}
+footer .copyright {
+  background-color: rgb(148, 185, 196);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width: 600px) {
   @keyframes animationImgsInBack {
     0% {
@@ -356,6 +398,11 @@ footer .contactUs .qs div:nth-child(2) span:nth-child(3) {
   }
   footer .contactUs .qs div:nth-child(1) {
     font-size: 20vw;
+  }
+  footer .copyright {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
   }
 }
 @media (max-width: 1024px) and (min-width: 601px) {
