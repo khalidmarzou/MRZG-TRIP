@@ -1,12 +1,11 @@
 @keyframes logoAnimation {
   0% {
-    transform: rotate(3deg);
   }
   50% {
-    transform: rotate(-3deg);
+    transform: translateX(20vw) rotateY(180deg);
   }
   100% {
-    transform: rotate(3deg);
+    transform: translateX(0px) rotateY(180deg);
   }
 }
 @keyframes animationImgsInBack {
@@ -87,11 +86,12 @@ header {
 header img {
   height: 40px;
   margin-left: 15px;
-}
-header img:hover {
   animation-name: logoAnimation;
-  animation-duration: 0.4s;
+  animation-duration: 6s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
 }
+
 header .rs {
   margin-right: 15px;
   display: flex;
@@ -307,15 +307,47 @@ footer .contactUs .qs div:nth-child(2) span {
   color: rgb(56, 51, 51);
   font-size: 1.5vw;
 }
-footer .contactUs .buttons div {
-  background-color: black;
-  color: rgb(148, 185, 196);
-  font-size: 3vw;
-  font-weight: 900;
-  cursor: pointer;
-  margin-top: 10px;
-  padding-left: 15px;
+footer .contactUs .buttons .btn {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+footer .contactUs .buttons .btn span {
+  width: 90%;
+  height: 60%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+footer .contactUs .buttons .btn span button {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 3vw;
+  border: none;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+footer .contactUs .buttons .btn span:hover {
+  border: 4px solid whitesmoke;
+  box-shadow: 0px 0px 100px 20px whitesmoke;
+  text-shadow: 2px 2px 2px red;
+  transform: translateY(-6px);
+}
+footer .contactUs .buttons .btn span button:hover {
+  text-shadow: 0.1px 0.1px 20px whitesmoke;
+}
+
 footer .contactUs .buttons div:hover {
   color: whitesmoke;
 }
@@ -424,6 +456,9 @@ footer .copyright {
   footer .contactUs .qs div:nth-child(2) span {
     font-size: 4vw;
   }
+  footer .contactUs .buttons .btn span button {
+    font-size: 7vw;
+  }
 }
 @media (max-width: 1024px) and (min-width: 601px) {
   main .whymorocco div {
@@ -440,5 +475,8 @@ footer .copyright {
   }
   footer .contactUs .qs div:nth-child(2) span {
     font-size: 2.5vw;
+  }
+  footer .contactUs .buttons .btn span button {
+    font-size: 5vw;
   }
 }
