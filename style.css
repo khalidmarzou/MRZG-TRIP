@@ -461,6 +461,16 @@ footer .copyright {
   }
 }
 @media (max-width: 1024px) and (min-width: 601px) {
+  @keyframes logoAnimation {
+    0% {
+    }
+    50% {
+      transform: translateX(13vw) rotateY(180deg);
+    }
+    100% {
+      transform: translateX(0px) rotateY(180deg);
+    }
+  }
   main .whymorocco div {
     width: 40%;
   }
