@@ -54,6 +54,14 @@
     border-left: 7px solid rgb(56, 56, 56);
   }
 }
+@keyframes def {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   background-color: black;
   padding: 0;
@@ -117,13 +125,14 @@ aside .title {
   width: 60%;
 }
 aside .def {
-  animation-name: titleAnimation;
-  animation-duration: 2s;
   color: whitesmoke;
   font-size: 5vw;
   text-align: center;
   width: 38%;
   line-height: 5vw;
+  animation-name: def;
+  animation-duration: 0.027s;
+  animation-iteration-count: infinite;
 }
 aside .def:hover {
   color: rgb(163, 163, 155);
@@ -237,7 +246,7 @@ footer .contactUs {
   justify-content: space-between;
   height: 550px;
 }
-footer .buttons{
+footer .buttons {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -294,7 +303,7 @@ footer .contactUs .qs div:nth-child(2) {
   justify-content: space-evenly;
   width: 100%;
 }
-footer .contactUs .qs div:nth-child(2) span{
+footer .contactUs .qs div:nth-child(2) span {
   color: rgb(56, 51, 51);
   font-size: 1.5vw;
 }
@@ -412,7 +421,7 @@ footer .copyright {
   footer .contactUs .buttons div {
     font-size: 7vw;
   }
-  footer .contactUs .qs div:nth-child(2) span{
+  footer .contactUs .qs div:nth-child(2) span {
     font-size: 4vw;
   }
 }
@@ -429,7 +438,7 @@ footer .copyright {
   footer .contactUs .buttons div {
     font-size: 4vw;
   }
-  footer .contactUs .qs div:nth-child(2) span{
+  footer .contactUs .qs div:nth-child(2) span {
     font-size: 2.5vw;
   }
 }
