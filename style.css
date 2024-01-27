@@ -148,8 +148,7 @@ aside .def {
   width: 38%;
   line-height: 5vw;
 }
-aside .title span {
-}
+
 aside .title span:nth-child(2) {
   text-align: end;
 }
