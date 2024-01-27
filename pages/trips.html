@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="trips.css" />
+    <title>Trips</title>
+  </head>
+  <body>
+    <header>
+      <img src="../media/logos/logo-white1.png" alt="LOGO" />
+      <div class="menu">
+        <a href="../index.html#top">HOME</a>
+        <a href="#">GALERY</a>
+        <a href="#">STORE</a>
+        <a href="../index.html#bottom">FAQIT</a>
+      </div>
+      <div class="rs">
+        <a href="https://www.instagram.com/">IG</a
+        ><a href="https://www.fb.com/">FB</a><a href="https://x.com/">X</a
+        ><a href="https:/linkden.com/">IN</a>
+      </div>
+      <a class="menu1" href="menu.html">[MENU]</a>
+    </header>
+    <div class="form">
+      <h1>Traveler Information</h1>
+      <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required />
+      </form>
+      <form>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+      </form>
+      <form>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+      </form>
+      <form>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="30"> </textarea>
+      </form>
+      <form>
+        <label for="nationality">Nationality:</label>
+        <select id="nationality" name="nationality" required>
+          <option value="" disabled selected>Select Nationality</option>
+          <option value="Germany">Germany</option>
+          <option value="Spain">Spain</option>
+          <option value="Italy">Italy</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="United States">United States</option>
+          <option value="Canada">Canada</option>
+          <option value="Mexico">Mexico</option>
+        </select>
+      </form>
+      <form>
+        <label for="duration">Duration (in days):</label>
+        <input type="number" id="duration" name="duration" required />
+      </form>
+      <form>
+        <label for="dates">Preferred Travel Dates:</label>
+        <input type="date" id="dates" name="dates" required />
+      </form>
+      <form>
+        <label for="travelers">Number of Travelers:</label>
+        <input type="number" id="travelers" name="travelers" required />
+      </form>
+      <form>
+        <label>Activities:</label>
+        <div>
+          <input type="checkbox" id="hiking" name="activity" value="hiking" />
+          <label for="hiking">Hiking</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="sightseeing"
+            name="activity"
+            value="sightseeing"
+          />
+          <label for="sightseeing">Sightseeing</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="camelriding"
+            name="activity"
+            value="camelriding"
+          />
+          <label for="camelriding">Camel Riding</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="shopping"
+            name="activity"
+            value="shopping"
+          />
+          <label for="shopping">Shopping in Traditional Markets</label>
+        </div>
+      </form>
+      <form>
+        <label for="special_requests">Special Requests:</label>
+        <textarea
+          id="special_requests"
+          name="special_requests"
+          rows="4"
+          cols="30"
+        ></textarea>
+      </form>
+      <form>
+        <label for="budget">Budget Range:</label>
+        <input type="text" id="budget" name="budget" />
+      </form>
+      <form>
+        <label for="hear_about">How did you hear about us?</label>
+        <select id="hear_about" name="hear_about">
+          <option value="Social Media">Social Media</option>
+          <option value="Word of Mouth">Word of Mouth</option>
+          <option value="Internet Search">Internet Search</option>
+          <option value="Advertisement">Advertisement</option>
+          <option value="Other">Other</option>
+        </select>
+      </form>
+      <form>
+        <label for="comments">Comments/Questions:</label>
+        <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+      </form>
+      <form>
+        <button>SEND</button>
+      </form>
+    </div>
+  </body>
+</html>
