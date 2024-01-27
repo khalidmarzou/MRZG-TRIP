@@ -65,6 +65,10 @@
   width: 20px;
   height: 20px;
 }
+.form form div input[type="radio"] {
+  width: 17px;
+  height: 17px;
+}
 .formpic .form form button {
   padding: 15px 40px;
   background: #ffffff;

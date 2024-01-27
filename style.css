@@ -364,16 +364,16 @@ footer .contactUs .qs div:nth-child(2) span {
   font-size: 1.5vw;
 }
 footer .contactUs .buttons .btn {
-  height: 100px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 footer .contactUs .buttons .btn span {
-  width: 90%;
-  height: 60%;
+  width: 40%;
+  height: 70px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -385,10 +385,10 @@ footer .contactUs .buttons .btn span {
 footer .contactUs .buttons .btn span button {
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: black;
   color: whitesmoke;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 3vw;
   border: none;
   letter-spacing: 5px;
