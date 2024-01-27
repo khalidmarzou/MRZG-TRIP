@@ -113,7 +113,7 @@ header a:hover {
 }
 aside .title {
   animation-name: titleAnimation;
-  animation-duration: 2s;
+  animation-duration: 5s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,18 +124,36 @@ aside .title {
   line-height: 11vw;
   width: 60%;
 }
+@media (prefers-reduced-motion: no-preference) {
+  .def {
+    animation: move-bg 10s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
 aside .def {
-  color: whitesmoke;
-  font-size: 5vw;
+  --bg-size: 400%;
+  --color-one: hsl(120, 73%, 20%);
+  --color-tree: rgb(255, 255, 255);
+  --color-two: hsl(0, 76%, 47%);
+  font-family: sans-serif;
+  font-size: clamp(3rem, 25vmin, 8rem);
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-tree),
+      var(--color-two)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  font-size: 3vw;
   text-align: center;
   width: 38%;
   line-height: 5vw;
-  animation-name: def;
-  animation-duration: 0.027s;
-  animation-iteration-count: infinite;
-}
-aside .def:hover {
-  color: rgb(163, 163, 155);
 }
 aside .title span {
 }
