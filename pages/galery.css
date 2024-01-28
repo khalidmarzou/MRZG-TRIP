@@ -48,6 +48,7 @@
   top: 0;
   animation-name: contentsanimation;
   animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
   background-color: rgb(255, 255, 255);
   height: 5vh;
   width: 1px;
