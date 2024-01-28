@@ -23,7 +23,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 8%;
+  gap: 7%;
 }
 .line {
   background-color: rgb(46, 46, 46);
@@ -41,7 +41,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 8%;
+  gap: 7%;
 }
 .content {
   position: relative;
@@ -73,20 +73,23 @@
   animation-duration: 2.5s;
 }
 .content:nth-child(7) {
-  animation-duration: 2.5s;
+  animation-duration: 2.6s;
 }
 .content:nth-child(8) {
-  animation-duration: 2.4s;
+  animation-duration: 2.5s;
 }
 .content:nth-child(9) {
-  animation-duration: 2.3s;
+  animation-duration: 2.4s;
 }
 .content:nth-child(10) {
-  animation-duration: 2.2s;
+  animation-duration: 2.3s;
 }
 .content:nth-child(11) {
-  animation-duration: 2.1s;
+  animation-duration: 2.2s;
 }
 .content:nth-child(12) {
+  animation-duration: 2.1s;
+}
+.content:nth-child(13) {
   animation-duration: 2s;
 }
