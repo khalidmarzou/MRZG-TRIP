@@ -1,52 +1,91 @@
 @keyframes contentsanimation {
-    0%{
-        top: 0;
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        top: 95vh;
-        opacity: 0;
-    }
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 95vh;
+    opacity: 0;
+  }
 }
 .lines {
-height: 100vh;
-background-color: rgb(0, 0, 0);
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-z-index: -2;
-display: flex;
-flex-direction: row;
-justify-content: center;
-gap: 25%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8%;
 }
 .line {
-background-color: rgb(46, 46, 46);
-height: 100vh;
-width: 1px;
+  background-color: rgb(46, 46, 46);
+  height: 100vh;
+  width: 1px;
 }
 .contents {
-background-color: transparent;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-z-index: -1;
-display: flex;
-flex-direction: row;
-justify-content: center;
-gap: 25%;
-animation-name: contentsanimation;
-animation-duration: 2s;
-animation-iteration-count: infinite;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8%;
 }
-.content{
-background-color: rgb(255, 255, 255);
-height: 5vh;
-width: 1px;
-box-shadow: 0px 0px 30px 2px white;
+.content {
+  position: relative;
+  top: 0;
+  animation-name: contentsanimation;
+  animation-iteration-count: infinite;
+  background-color: rgb(255, 255, 255);
+  height: 5vh;
+  width: 1px;
+  box-shadow: 0px 0px 30px 2px white;
+}
+.content:nth-child(1) {
+  animation-duration: 2s;
+}
+.content:nth-child(2) {
+  animation-duration: 2.1s;
+}
+.content:nth-child(3) {
+  animation-duration: 2.2s;
+}
+.content:nth-child(4) {
+  animation-duration: 2.3s;
+}
+.content:nth-child(5) {
+  animation-duration: 2.4s;
+}
+.content:nth-child(6) {
+  animation-duration: 2.5s;
+}
+.content:nth-child(7) {
+  animation-duration: 2.5s;
+}
+.content:nth-child(8) {
+  animation-duration: 2.4s;
+}
+.content:nth-child(9) {
+  animation-duration: 2.3s;
+}
+.content:nth-child(10) {
+  animation-duration: 2.2s;
+}
+.content:nth-child(11) {
+  animation-duration: 2.1s;
+}
+.content:nth-child(12) {
+  animation-duration: 2s;
 }
