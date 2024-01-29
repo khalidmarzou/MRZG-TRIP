@@ -205,7 +205,7 @@ aside .backimages {
   flex-direction: column;
   gap: 30px;
   justify-content: center;
-  width: 100%;
+  width: 98vw;
 }
 aside .backimages div {
   display: flex;
