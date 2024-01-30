@@ -175,7 +175,7 @@
 }
 
 .photo__image img {
-  width: 90%;
+  width: 100%;
   transform: scale(.7);
   transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
 }
