@@ -96,39 +96,47 @@
 }
 
 
-.photos {
-  background: transparent;
-  font-family: "Fira Sans", sans-serif;
-  padding-right: 2rem;
-  border: red solid;
-}
 .photos{
   display: flex;
   flex-wrap: wrap;
+  background: transparent;
+  font-family: "Fira Sans", sans-serif;
   justify-content: space-evenly;
-  padding: 5%;
-  gap: 50px;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
-.photos .photo{
-  border: 1px solid white;
+.photos .groupphotos{
+  width: 20%;
   display: flex;
   flex-direction: column;
-  padding: 0;
-  width: 20%;
+  gap: 25px;
+}
+
+.photos .groupphotos .photo{
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.photos .photo .photo_image{
+.photos .groupphotos .photo .photo_image{
   width: 80%;
-  border: solid yellow;
   display: flex;
+  border-radius: 10px;
 }
-.photos .photo .photo_image img{
+.photos .groupphotos .photo .photo_image img{
   width: 100%;
+  border-radius: 10px;
 }
-.photos .photo .photo_name{
+.photos .groupphotos .photo .photo_name{
   color: whitesmoke;
   text-align: center;
-  border: solid green;
   width: 80%;
+  font-weight: 900;
+  font-size: 2vw;
+  color: #000000;
+  text-shadow:
+    1px 1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff;
 }
