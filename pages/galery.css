@@ -100,4 +100,35 @@
   background: transparent;
   font-family: "Fira Sans", sans-serif;
   padding-right: 2rem;
+  border: red solid;
+}
+.photos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5%;
+  gap: 50px;
+}
+
+.photos .photo{
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 20%;
+  align-items: center;
+}
+.photos .photo .photo_image{
+  width: 80%;
+  border: solid yellow;
+  display: flex;
+}
+.photos .photo .photo_image img{
+  width: 100%;
+}
+.photos .photo .photo_name{
+  color: whitesmoke;
+  text-align: center;
+  border: solid green;
+  width: 80%;
 }
