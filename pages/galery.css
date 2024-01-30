@@ -118,6 +118,16 @@
   flex-direction: column;
   align-items: center;
 }
+.photos .groupphotos .photo:hover .photo_name{
+  color: whitesmoke;
+  text-shadow: none;
+  text-transform:uppercase;
+  transform: translateY(-10px);
+}
+.photos .groupphotos .photo:hover .photo_image img{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
 .photos .groupphotos .photo .photo_image{
   width: 80%;
   display: flex;
@@ -126,6 +136,9 @@
 .photos .groupphotos .photo .photo_image img{
   width: 100%;
   border-radius: 10px;
+  filter: grayscale(100%);
+  transition-property: all;
+  transition-duration: .4s;
 }
 .photos .groupphotos .photo .photo_name{
   color: whitesmoke;
@@ -139,4 +152,24 @@
     -1px 1px 0 #ffffff,
     -1px -1px 0 #ffffff,
     1px -1px 0 #ffffff;
+    transition-property: all;
+    transition-duration: .4s;
+}
+
+@media (max-width: 600px) {
+  .photos .groupphotos{
+    width: 45%;
+  }
+  .photos .groupphotos .photo .photo_name{
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+  .photos .groupphotos{
+    width: 30%;
+  }
+  .photos .groupphotos .photo .photo_name{
+    font-size: 3vw;
+  }
 }
