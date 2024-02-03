@@ -10,6 +10,7 @@
 .main {
   border: .5px solid yellow;
   width: 67vw;
+  background-color: red;
 }
 .aside {
   width: 27vw;
