@@ -8,11 +8,10 @@
   padding-top: 2vh;
 }
 .main {
-  border: .5px solid yellow;
-  width: 67vw;
+  width: 70%;
 }
 .aside {
-  width: 27vw;
+  width: 20vw;
   position: fixed;
   top: 10vh;
   left: 1vw;
@@ -92,16 +91,63 @@
 .aside .titleForms .colors .brown {
   background-color: brown;
 }
-table td img{
-  height: 200px;
+table td img {
+  width: 90%;
+  margin-top: 20px;
 }
-table{
-  border: 1px solid white;
+table {
+  color: white;
+  border-spacing: 0px !important;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+table td {
+  text-align: center;
+  width: 22vw;
+  border: 0.1px solid white;
+}
+table td div {
+  background-color: yellow;
+  color: black;
+  font-weight: 900;
+  width: 50%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+  border-radius: 5px;
+}
+table td .solde {
+  background-color: red;
   color: white;
 }
-table td{
-  border: 1px solid white;
+table tr:nth-child(3n-2) td {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
 }
-table tr{
-  
+table tr td:first-child {
+  border-left: 0;
+}
+table tr td:last-child {
+  border-right: 0;
+}
+table tr:nth-child(3n-1) td {
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+}
+table tr:nth-child(3n) td {
+  border-top: 0;
+  border-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+table tr:last-child td{
+  border-bottom: 0;
 }
