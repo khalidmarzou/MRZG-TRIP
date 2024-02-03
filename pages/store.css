@@ -8,9 +8,8 @@
   padding-top: 2vh;
 }
 .main {
-  border: solid yellow;
+  border: .5px solid yellow;
   width: 67vw;
-  height: 100%;
 }
 .aside {
   width: 27vw;
@@ -37,6 +36,8 @@
 }
 .aside .titleForms form {
   padding-left: 5%;
+  display: flex;
+  align-items: center;
 }
 .aside a {
   text-decoration: none;
@@ -90,4 +91,17 @@
 }
 .aside .titleForms .colors .brown {
   background-color: brown;
+}
+table td img{
+  height: 200px;
+}
+table{
+  border: 1px solid white;
+  color: white;
+}
+table td{
+  border: 1px solid white;
+}
+table tr{
+  
 }
