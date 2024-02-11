@@ -82,8 +82,7 @@
   border: 0.5px solid grey;
   border-radius: 50%;
 }
-.aside .titleForms .colors div:hover
-.aside .titleForms .colors .purple {
+.aside .titleForms .colors div:hover .aside .titleForms .colors .purple {
   background-color: purple;
 }
 .aside .titleForms .colors .haki {
@@ -104,7 +103,7 @@ table {
 }
 table td {
   text-align: center;
-  width: 22vw;
+  width: 30vw;
   border: 0.1px solid white;
 }
 table td div {
@@ -153,12 +152,16 @@ table tr:last-child td {
   border-bottom: 0;
 }
 
-@media (min) (max-width: 600px) {
+@media screen and (max-width: 964px) {
   .aside {
-    width: 30vw;
+    display: none;
   }
   .main {
-    width: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
-  
+  .aside .iconTitle {
+    display: none;
+  }
 }
