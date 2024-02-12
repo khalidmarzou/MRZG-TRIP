@@ -187,7 +187,6 @@ aside .def {
   --color-one: hsl(120, 51%, 65%);
   --color-tree: rgb(233, 230, 230);
   --color-two: hsl(60, 74%, 48%);
-  font-family: sans-serif;
   font-size: clamp(3rem, 25vmin, 8rem);
   background: linear-gradient(
       90deg,

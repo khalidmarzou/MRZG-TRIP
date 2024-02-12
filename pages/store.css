@@ -86,7 +86,7 @@
   border-radius: 50%;
   cursor: pointer;
   transition: all;
-  transition-duration: 5s;
+  transition-duration: .5s;
 }
 .aside .titleForms .colors .purple {
   background-color: purple;
@@ -98,7 +98,7 @@
   background-color: brown;
 }
 .aside .titleForms .colors div:hover {
-  filter: blur(3px);
+  border: 1px solid whitesmoke;
 }
 table td img {
   width: 90%;
