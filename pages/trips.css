@@ -18,7 +18,7 @@ header{
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #4F2F3C;
-  color: #4F2F3C;
+  color: grey;
   outline: none;
 }
 .form form select {
@@ -40,7 +40,7 @@ header{
   background-color: transparent;
   border-radius: 5px;
   outline: none;
-  color: #4F2F3C;
+  color: grey;
   resize: none;
 }
 .form h1 {
