@@ -182,7 +182,7 @@
 .photos .groupphotos .photo .photo_image img {
   width: 100%;
   border-radius: 10px;
-  filter: grayscale(100%);
+  filter: grayscale(80%);
   transition-property: all;
   transition-duration: 0.4s;
 }
