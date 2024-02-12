@@ -67,6 +67,13 @@
     border-left: 7px solid rgb(56, 56, 56);
   }
 }
+@font-face {
+  font-family: Guerrilla;
+  src: url("Protest_Guerrilla/ProtestGuerrilla-Regular.ttf");
+}
+*{
+  font-family: Guerrilla;
+}
 body {
   background-color: black;
   padding: 0;
