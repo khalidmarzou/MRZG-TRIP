@@ -93,7 +93,7 @@ header {
   z-index: 2;
   top: 0;
   padding-top: 10px;
-  background-color: #e6a4b549;
+  background-color: #9e516450;
   backdrop-filter: blur(10px);
 }
 header img {
@@ -149,7 +149,7 @@ header .menu a:nth-child(5) {
 }
 header a {
   text-decoration: none;
-  color: rgb(163, 163, 155);
+  color: rgb(67, 67, 63);
   transition-property: all;
   transition-duration: 1s;
 }
