@@ -3,7 +3,7 @@
   }
   50% {
     transform: translateX(25vw) rotateY(180deg) rotateX(15deg) rotateZ(-10deg);
-    filter: drop-shadow(10px 10px 2px #4e4d4d);
+    filter: drop-shadow(10px 10px 5px #4e4d4d);
   }
   100% {
     transform: translateX(0px) rotateY(180deg);
@@ -473,7 +473,7 @@ footer .copyright {
     }
     50% {
       transform: translateX(50vw) rotateY(180deg) rotateX(15deg) rotateZ(-10deg);
-      filter: drop-shadow(10px 10px 2px #4e4d4d);
+      filter: drop-shadow(1px 10px 5px #4e4d4d);
     }
     100% {
       transform: translateX(0px) rotateY(180deg);
