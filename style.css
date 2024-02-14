@@ -440,7 +440,27 @@ footer .copyright {
   display: flex;
   justify-content: space-between;
 }
-
+footer .copyright :first-child{
+  display: flex;
+  align-items: center;
+}
+footer .copyright :first-child a{
+  margin-left: 5px;
+}
+footer .copyright :last-child{
+  display: flex;
+  align-items: center;
+}
+footer .copyright :last-child span{
+  font-size: 25px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+footer .copyright img{
+  height: 30px;
+  margin-left: 5px;
+}
 @media (max-width: 600px) {
   @keyframes animationImgsInBack {
     0% {
