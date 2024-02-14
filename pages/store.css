@@ -197,7 +197,42 @@ table tr td .buyButton:focus {
 table tr td:hover .buyButton {
   display: inline-block;
 }
+.asideMobile {
+  display: none;
+}
 @media screen and (max-width: 964px) {
+  .asideMobile {
+    display: inline-block;
+    position: fixed;
+    left: 20px;
+    top: 13vh;
+    z-index: 9999;
+    display: flex;
+  }
+  .asideMobile img:nth-of-type(2) {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .asideMobile img {
+    height: 30px;
+    cursor: pointer;
+  }
+  .asideMobile:focus img {
+    display: inline;
+  }
+  .asideMobile div{
+    display: none;
+  }
+  .asideMobile:focus div{
+    display: inline-block;
+  }
+  .asideMobile:focus{
+    background-color: rgba(0, 0, 0, 0.313);
+    border-radius: 1px;
+    width: 90vw;
+  }
   .aside {
     display: none;
   }
