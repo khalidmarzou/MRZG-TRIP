@@ -165,7 +165,6 @@ aside .title {
   justify-content: center;
   color: #000;
   font-size: 15vw;
-  font-weight: ;
   line-height: 12vw;
   width: 60%;
   color: #fff8e3;
@@ -201,8 +200,6 @@ aside .def {
   text-align: center;
   width: 38%;
   line-height: 5vw;
-}
-aside .title span:nth-child(1) {
 }
 aside .title span:nth-child(2) {
   text-align: end;
