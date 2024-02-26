@@ -179,10 +179,10 @@ table tr td {
 table tr td .buyButton {
   display: none;
   clip-path: none;
-  background-color: rgba(128, 128, 128, 0.457);
+  background-color: rgba(160, 185, 90, 0.457);
   backdrop-filter: blur(2px);
   cursor: pointer;
-  color: rgb(225, 225, 128);
+  color: rgb(0, 0, 0);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -192,7 +192,7 @@ table tr td .buyButton {
   line-height: 40px;
 }
 table tr td .buyButton:focus {
-  border: solid rgba(7, 43, 133, 0.342);
+  border: solid rgba(168, 255, 7, 0.986);
 }
 table tr td:hover .buyButton {
   display: inline-block;
@@ -208,12 +208,14 @@ table tr td:hover .buyButton {
     top: 13vh;
     z-index: 9999;
     display: flex;
+    padding: 15px;
   }
   .asideMobile img:nth-of-type(2) {
     display: none;
     position: absolute;
     left: 0;
     top: 0;
+    padding: 15px;
   }
   .asideMobile img {
     height: 30px;
@@ -222,16 +224,25 @@ table tr td:hover .buyButton {
   .asideMobile:focus img {
     display: inline;
   }
-  .asideMobile div{
+  .asideMobile div {
     display: none;
   }
-  .asideMobile:focus div{
+  .asideMobile:focus div {
     display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 5px;
   }
-  .asideMobile:focus{
-    background-color: rgba(0, 0, 0, 0.313);
+  .asideMobile:focus div select {
+    width: 80px;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  .asideMobile:focus {
+    background-color: rgba(41, 42, 63, 0.313);
     border-radius: 1px;
-    width: 90vw;
+    width: 85vw;
+    border-radius: 10px;
   }
   .aside {
     display: none;

@@ -93,7 +93,7 @@ header {
   z-index: 2;
   top: 0;
   padding-top: 10px;
-  background-color: #9e516450;
+  background-color: #00000050;
   backdrop-filter: blur(10px);
 }
 header img {
